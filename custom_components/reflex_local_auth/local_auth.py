@@ -63,7 +63,7 @@ class LocalAuthState(rx.State):
             ).all():
                 session.delete(auth_session)
             session.commit()
-        self.auth_token = self.auth_token
+        self.auth_token = ""
 
     def _login(
         self,
